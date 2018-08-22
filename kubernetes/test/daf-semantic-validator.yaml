@@ -21,6 +21,8 @@ spec:
       labels:
         app: daf-semantic-validator
     spec:
+      imagePullSecrets:
+        - name: regsecret
       containers:
         - name: daf-semantic-validator
           image: nexus.teamdigitale.test/daf-semantic-validator:1.0.1
